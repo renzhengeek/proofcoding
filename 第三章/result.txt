@@ -1,0 +1,2 @@
+This is child process with pid of 10310
+I catched a child process with pid od 10310
