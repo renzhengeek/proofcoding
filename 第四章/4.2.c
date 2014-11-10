@@ -20,13 +20,16 @@ static int __init memtest_init(void)
 		printk("start:%p\t end:%p\n", (unsigned long *)temp->vm_start, (unsigned long *)temp->vm_end);
 		temp = temp->vm_next;
 	}
+
 	return 0;
 }
+
 static void __exit memtest_exit(void)
 {
 	printk("Unloading my module.\n");
 	return;
 }
+
 module_init(memtest_init);
 module_exit(memtest_exit);
 MODULE_LICENSE("GPL");
